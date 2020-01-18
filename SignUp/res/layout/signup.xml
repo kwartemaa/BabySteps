@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        
+        android:id="@+id/iv_appicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="115dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/ic_launcher" 
+        android:contentDescription="@string/cd_image_signup" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/iv_appicon"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/txt_signup_email"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/signuppassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignStart="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginLeft="13dp"
+         android:layout_marginStart="13dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/txt_signup_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tv_login"
+        android:layout_alignEnd="@+id/tv_login"
+         android:layout_alignLeft="@+id/signuppassword"
+        android:layout_alignStart="@+id/signuppassword"
+        android:layout_below="@+id/signuppassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/btn_signup_signup" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignRight="@+id/signuppassword"
+        android:layout_alignEnd="@+id/signuppassword"
+        android:layout_below="@+id/btn_signup"
+        android:layout_marginTop="44dp"
+        android:layout_toEndOf="@+id/iv_appicon"
+        android:layout_toRightOf="@+id/iv_appicon"
+        android:text="@string/txt_signup_login" />
+
+</RelativeLayout>
